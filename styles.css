@@ -104,7 +104,7 @@ nav ul li a:hover {
     align-items: flex-start; /* Align items to the start */
     position: relative;
     height: 100vh;
-    background: url('background-image.jpeg') no-repeat center center/cover;
+    background: url('images/background-image.jpeg') no-repeat center center/cover;
     overflow: hidden;
 }
 
@@ -155,7 +155,7 @@ nav ul li a:hover {
 .about-section {
     position: relative;
     height: 100vh; /* Full viewport height */
-    background: url('background-image.jpeg') no-repeat center center/cover; /* Same background */
+    background: url('./images/background-image.jpeg') no-repeat center center/cover; /* Same background */
 }
 
 .about-section .overlay {
@@ -173,7 +173,7 @@ nav ul li a:hover {
 .contact-section {
     position: relative;
     height: 100vh; /* Full viewport height */
-    background: url('background-image.jpeg') no-repeat center center/cover; /* Same background */
+    background: url('./images/background-image.jpeg') no-repeat center center/cover; /* Same background */
 }
 
 .contact-section .overlay {

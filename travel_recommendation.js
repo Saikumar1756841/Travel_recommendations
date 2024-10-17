@@ -57,12 +57,12 @@ document.addEventListener('DOMContentLoaded', function() {
             "cities": [
               {
                 "name": "Sydney, Australia",
-                "imageUrl": "sydney.jpg",
+                "imageUrl": "./images/sydney.jpg",
                 "description": "A vibrant city known for its iconic landmarks like the Sydney Opera House and Sydney Harbour Bridge."
               },
               {
                 "name": "Melbourne, Australia",
-                "imageUrl": "melbourne.jpeg",
+                "imageUrl": "./images/melbourne.jpeg",
                 "description": "A cultural hub famous for its art, food, and diverse neighborhoods."
               }
             ]
@@ -73,12 +73,12 @@ document.addEventListener('DOMContentLoaded', function() {
             "cities": [
               {
                 "name": "Tokyo, Japan",
-                "imageUrl": "tokyo.jpeg",
+                "imageUrl": "./images/tokyo.jpeg",
                 "description": "A bustling metropolis blending tradition and modernity, famous for its cherry blossoms and rich culture."
               },
               {
                 "name": "Kyoto, Japan",
-                "imageUrl": "kyoto.jpeg",
+                "imageUrl": "./images/kyoto.jpeg",
                 "description": "Known for its historic temples, gardens, and traditional tea houses."
               }
             ]
@@ -89,12 +89,12 @@ document.addEventListener('DOMContentLoaded', function() {
             "cities": [
               {
                 "name": "Rio de Janeiro, Brazil",
-                "imageUrl": "rio.jpeg",
+                "imageUrl": "./images/rio.jpeg",
                 "description": "A lively city known for its stunning beaches, vibrant carnival celebrations, and iconic landmarks."
               },
               {
                 "name": "São Paulo, Brazil",
-                "imageUrl": "sydney.jpg",
+                "imageUrl": "./images/sydney.jpg",
                 "description": "The financial hub with diverse culture, arts, and a vibrant nightlife."
               }
             ]
@@ -104,13 +104,13 @@ document.addEventListener('DOMContentLoaded', function() {
           {
             "id": 1,
             "name": "Angkor Wat, Cambodia",
-            "imageUrl": "melbourne.jpeg",
+            "imageUrl": "./images/melbourne.jpeg",
             "description": "A UNESCO World Heritage site and the largest religious monument in the world."
           },
           {
             "id": 2,
             "name": "Taj Mahal, India",
-            "imageUrl": "tajmahal.jpeg",
+            "imageUrl": "./images/tajmahal.jpeg",
             "description": "An iconic symbol of love and a masterpiece of Mughal architecture."
           }
         ],
@@ -118,13 +118,13 @@ document.addEventListener('DOMContentLoaded', function() {
           {
             "id": 1,
             "name": "Bora Bora, French Polynesia",
-            "imageUrl": "melbourne.jpeg",
+            "imageUrl": "./images/melbourne.jpeg",
             "description": "An island known for its stunning turquoise waters and luxurious overwater bungalows."
           },
           {
             "id": 2,
             "name": "Copacabana Beach, Brazil",
-            "imageUrl": "melbourne.jpeg",
+            "imageUrl": "./images/melbourne.jpeg",
             "description": "A famous beach in Rio de Janeiro, Brazil, with a vibrant atmosphere and scenic views."
           }
         ]
