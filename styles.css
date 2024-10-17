@@ -1,0 +1,310 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #222;
+    overflow: hidden; /* Prevent body from scrolling */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav items */
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    position: relative; /* For positioning */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    position: absolute; /* Positioning logo */
+    left: 20px; /* Adjust as needed */
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo p {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+nav {
+    flex-grow: 1; /* Allow the nav to take up available space */
+    text-align: center; /* Center the nav items */
+}
+
+nav ul {
+    display: inline-flex; /* Use inline-flex to center */
+    list-style: none;
+    padding: 0; /* Remove padding */
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+    color: #00bfa6; /* Color change on hover */
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align to the right */
+    margin-left: auto; /* Push the search bar to the right */
+}
+
+.search-bar input {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    background-color: #00bfa6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.search-bar button:hover {
+    background-color: #008f7a; /* Color change on hover */
+}
+
+/* Home Section */
+.home-section {
+    display: flex; /* Enable flexbox layout */
+    justify-content: space-between; /* Space between content and recommendations */
+    align-items: flex-start; /* Align items to the start */
+    position: relative;
+    height: 100vh;
+    background: url('background-image.jpeg') no-repeat center center/cover;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.content {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: white;
+}
+
+.content h1 {
+    font-size: 70px;
+    line-height: 1.2;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 15px 30px;
+    background-color: #00bfa6;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.button:hover {
+    background-color: #008f7a; /* Color change on hover */
+}
+
+/* About Section */
+.about-section {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    background: url('background-image.jpeg') no-repeat center center/cover; /* Same background */
+}
+
+.about-section .overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.about-section .content {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: white;
+}
+
+/* Contact Section */
+.contact-section {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    background: url('background-image.jpeg') no-repeat center center/cover; /* Same background */
+}
+
+.contact-section .overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.contact-section .content {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: white;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column; /* Vertical form layout */
+    width: 300px; /* Fixed width for the form */
+}
+
+.contact-section input,
+.contact-section textarea {
+    margin-bottom: 10px; /* Spacing between fields */
+    padding: 10px;
+    border-radius: 5px;
+    border: none; /* Remove border */
+}
+
+.contact-section textarea {
+    resize: none; /* Disable resizing */
+    height: 100px; /* Set height for textarea */
+}
+
+.contact-section button {
+    padding: 10px;
+    background-color: #00bfa6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.contact-section button:hover {
+    background-color: #008f7a; /* Color change on hover */
+}
+
+/* Social Media Icons */
+.social-icons {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-icons a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.social-icons a:hover {
+    background-color: #00bfa6; /* Color change on hover */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 40px; /* Adjust size for mobile */
+    }
+
+    .social-icons {
+        left: 10px; /* Adjust position */
+    }
+}
+
+/* Recommendations Section */
+#recommendations {
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Adjust width as necessary */
+    height: calc(100vh - 100px); /* Full height minus some space for padding */
+    overflow-y: auto; /* Enable scrolling */
+    padding: 20px;
+    background-color:rgba(255, 255, 255, 0); /* Optional: background for readability */
+    position: absolute;
+    top: 50px; /* Push the recommendations below the navbar */
+    right: 0;
+}
+
+.recommendation {
+    width: 100%; /* Full width */
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    color: black;
+}
+
+.recommendation img {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.recommendation h3 {
+    margin: 0;
+}
+
+.recommendation p {
+    margin: 5px 0;
+}
+
+/* Responsive design for recommendations */
+@media (max-width: 768px) {
+    #recommendations {
+        width: 100%; /* Full width on smaller screens */
+        height: auto;
+        position: static; /* Remove fixed position */
+    }
+}
